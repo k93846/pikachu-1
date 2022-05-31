@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>测试</title>
+  </head>
+  <body>
+    测试
+    <style id="demo1"></style>
+    <div id="demo2"></div>
+    <div id="buttons">
+        <button id="btnPause">暂停</button>
+        <button id="btnPlay">播放</button>
+        <button id="btnSlow">慢速</button>
+        <button id="btnNormal">中速</button>
+        <button id="btnFast">快速</button>
+    </div>
+    <style>*{box-sizing: border-box;}
+        *::before,*::after{
+            box-sizing: border-box;
+        }
+        button{
+            height: 70px;
+            background-color: blue;
+            color: white;
+           
+        }
+        #buttons{
+            position:absolute;
+            z-index: 1;
+            width: 100px;
+            height: 400px;
+            right: 5%;
+            top: 5%;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+
+
+      #demo2 {
+        height: 50vh;
+        overflow: auto;
+      }
+      #demo2::-webkit-scrollbar{
+          display: none;
+      }
+      #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+      }</style>
+    <div id="html">
+      <div class="skin">
+        <div class="eye left">
+          <div class="face left"></div>
+        </div>
+        <div class="eye right">
+          <div class="face right"></div>
+        </div>
+
+        <div class="nose">
+          <div class="yuan"></div>
+        </div>
+
+        <div class="mouth">
+          <div class="up">
+            <div class="lip left"></div>
+            <div class="lip right"></div>
+          </div>
+          <div class="down">
+            <div class="yuan"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/test.e98b79dd.js"></script>
+  </body>
+</html>
