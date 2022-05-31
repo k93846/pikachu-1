@@ -11,43 +11,43 @@
     <style id="demo1"></style>
     <div id="demo2"></div>
     <div id="buttons">
-        <button id="btnPause">暂停</button>
-        <button id="btnPlay">播放</button>
-        <button id="btnSlow">慢速</button>
-        <button id="btnNormal">中速</button>
-        <button id="btnFast">快速</button>
+      <button id="btnPause">暂停</button>
+      <button id="btnPlay">播放</button>
+      <button id="btnSlow">慢速</button>
+      <button id="btnNormal">中速</button>
+      <button id="btnFast">快速</button>
     </div>
-    <style>*{box-sizing: border-box;}
-        *::before,*::after{
-            box-sizing: border-box;
-        }
-        button{
-            height: 70px;
-            background-color: blue;
-            color: white;
-           
-        }
-        #buttons{
-            position:absolute;
-            z-index: 1;
-            width: 100px;
-            height: 400px;
-            right: 5%;
-            top: 5%;
-            display: flex;
-            flex-wrap: nowrap;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-
+    <style>* {
+        box-sizing: border-box;
+      }
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      button {
+        height: 70px;
+        background-color: blue;
+        color: white;
+      }
+      #buttons {
+        position: absolute;
+        z-index: 1;
+        width: 100px;
+        height: 400px;
+        right: 5%;
+        top: 5%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: space-between;
+      }
 
       #demo2 {
         height: 50vh;
         overflow: auto;
       }
-      #demo2::-webkit-scrollbar{
-          display: none;
+      #demo2::-webkit-scrollbar {
+        display: none;
       }
       #html {
         position: fixed;
@@ -80,6 +80,64 @@
         </div>
       </div>
     </div>
-    <script src="/test.e98b79dd.js"></script>
+    <script>var string = "skin>* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n}\nskin>*::before,\nskin>*::after {\n  box-sizing: border-box;\n}\nbody {\n  background: rgba(255, 230, 0, 100%);\n  min-height: 100vh;\n}\n.skin {\n  position: relative;\n}\n.nose {\n  border: 10px solid;\n  border-color: black transparent transparent;\n  border-bottom: none;\n  width: 0px;\n  height: 0px;\n  position: relative;\n  left: 50%;\n  top: 150px;\n  margin-left: -10px;\n  z-index: 20;\n}\n@keyframes wave {\n  0% {\n  }\n  25% {\n    transform: rotate(-10deg);\n  }\n  50% {\n    transform: rotate(0deg);\n  }\n  75% {\n    transform: rotate(10deg);\n  }\n  100% {\n    transform: rotate(0deg);\n  }\n}\n.nose:hover {\n  transform-origin: 50% 100%;\n  animation: wave 0.3s infinite linear;\n}\n\n.nose > .yuan {\n  position: absolute;\n  border: 1px solid transparent;\n  background: black;\n  width: 20px;\n  height: 6px;\n  top: -16px;\n  left: -10px;\n  border-radius: 10px 10px 0 0;\n}\n.eye {\n  border: 2px solid #000;\n  width: 64px;\n  height: 64px;\n  position: absolute;\n  left: 50%;\n  top: 100px;\n  margin-left: -32px;\n  background: #2e2e2e;\n  border-radius: 50%;\n}\n\n.eye::before {\n  content: \"\";\n  display: block;\n  border: 3px solid black;\n  width: 25px;\n  height: 25px;\n  background: #fff;\n  border-radius: 50%;\n  position: relative;\n  left: 8px;\n  top: 1px;\n}\n.eye.left {\n  transform: translateX(-100px);\n}\n.eye.right {\n  transform: translateX(100px);\n}\n\n.mouth {\n  width: 220px;\n  height: 220px;\n  position: absolute;\n  left: 50%;\n  margin-left: -110px;\n  top: 170px;\n  border: 1px solid red;\n  overflow: hidden;\n}\n.mouth > .up {\n  position: relative;\n  top: -20px;\n  display: flex;\n  z-index: 1;\n}\n.mouth > .up > .lip {\n  position: absolute;\n  border: 3px solid black;\n  height: 30px;\n  width: 100px;\n}\n\n.mouth > .up > .lip.left {\n  border-radius: 0 0 0 50px;\n  transform: rotateZ(-15deg) translateX(-53px);\n  left: 50%;\n  margin-left: -50px;\n  border-right: transparent;\n  border-top: transparent;\n}\n.mouth > .up > .lip::before {\n  content: \"\";\n  display: block;\n  width: 80px;\n  height: 30px;\n  position: absolute;\n}\n.mouth > .up > .lip.left::before {\n  right: -5px;\n  bottom: 0px;\n  background: rgba(255, 230, 0, 100%);\n}\n.mouth > .up > .lip.right {\n  border-radius: 0px 0px 50px 0px;\n  transform: rotateZ(15deg) translateX(53px);\n  right: 50%;\n  margin-right: -50px;\n  border-top: transparent;\n  border-left: transparent;\n}\n.mouth > .up > .lip.right::before {\n  left: -9px;\n  bottom: 0px;\n  background: rgba(255, 230, 0, 100%);\n}\n\n.mouth > .down {\n  border: 3px solid black;\n  width: 120px;\n  height: 500px;\n  position: absolute;\n  left: 50%;\n  margin-left: -60px;\n  border-radius: 100%;\n  bottom: 20%;\n  background-color: rgb(155, 0, 10);\n  overflow: hidden;\n}\n\n.mouth > .down > .yuan {\n  border: transparent;\n  width: 150px;\n  height: 150px;\n  position: absolute;\n  top: 72%;\n  background-color: rgb(255, 72, 95);\n  left: 50%;\n  margin-left: -75px;\n  border-radius: 50%;\n}\n.mouth {\n  border: transparent;\n}\n.eye > .face {\n  position: absolute;\n  border: 1px solid black;\n  width: 80px;\n  height: 80px;\n  top: 15%;\n  border-radius: 50%;\n  background: rgb(255, 0, 0);\n}\n.eye > .face.right {\n  right: -80px;\n  top: 100px;\n}\n.eye > .face.left {\n  left: -80px;\n  top: 100px;\n}";
+var player = {
+  id: undefined,
+  time: 10,
+  n: 1,
+  init: function init() {
+    player.play();
+    player.bindEvents();
+  },
+  events: {
+    "#btnPause": "pause",
+    "#btnPlay": "play",
+    "#btnSlow": "slow",
+    "#btnNormal": "normal",
+    "#btnFast": "fast"
+  },
+  bindEvents: function bindEvents() {
+    for (var key in player.events) {
+      if (player.events.hasOwnProperty(key)) {
+        var value = player.events[key];
+        document.querySelector(key).onclick = player[value];
+      }
+    }
+  },
+  x: function x() {
+    if (player.n > string.length) {
+      window.clearInterval(player.id);
+      return;
+    }
+
+    demo1.innerHTML = string.substring(0, player.n);
+    demo2.innerText = string.substring(0, player.n);
+    player.n += 1;
+    demo2.scrollTop = demo2.scrollHeight;
+  },
+  play: function play() {
+    player.id = setInterval(player.x, player.time);
+  },
+  pause: function pause() {
+    console.log("jjj");
+    window.clearInterval(player.id);
+  },
+  slow: function slow() {
+    player.pause();
+    player.time = 50;
+    player.play();
+  },
+  normal: function normal() {
+    player.pause();
+    player.time = 10;
+    player.play();
+  },
+  fast: function fast() {
+    player.pause();
+    player.time = 0;
+    player.play();
+  }
+};
+player.init();</script>
   </body>
 </html>
