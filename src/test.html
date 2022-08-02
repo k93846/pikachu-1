@@ -52,7 +52,7 @@
       }
       #html {
         position: fixed;
-        bottom: 0;
+        bottom: 15vh;
         left: 0;
         width: 100%;
         height: 50vh;
@@ -309,11 +309,12 @@ body {
           demo2.scrollTop = demo2.scrollHeight;
         },
         play: () => {
+          window.clearInterval(player.id);
           player.id = setInterval(player.x, player.time);
         },
 
         pause: () => {
-          console.log("jjj");
+          console.log("清除成功");
           window.clearInterval(player.id);
         },
         slow: () => {
